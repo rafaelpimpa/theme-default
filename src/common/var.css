@@ -2,53 +2,57 @@
 
   /* Transition
   -------------------------- */
-  --all-transition: all .3s cubic-bezier(.645,.045,.355,1);
-  --fade-transition: opacity 300ms cubic-bezier(0.23, 1, 0.32, 1);
-  --fade-linear-transition: opacity 200ms linear;
-  --md-fade-transition: transform 300ms cubic-bezier(0.23, 1, 0.32, 1) 100ms, opacity 300ms cubic-bezier(0.23, 1, 0.32, 1) 100ms;
-  --border-transition-base: border-color .2s cubic-bezier(.645,.045,.355,1);
-  --color-transition-base: color .2s cubic-bezier(.645,.045,.355,1);
+  --all-transition: all 150ms cubic-bezier(.645,.045,.355,1);
+  --fade-transition: opacity 250ms cubic-bezier(0.23, 1, 0.32, 1);
+  --fade-linear-transition: opacity 250ms linear;
+  --md-fade-transition: transform 250ms cubic-bezier(0.23, 1, 0.32, 1) 100ms, opacity 300ms cubic-bezier(0.23, 1, 0.32, 1) 100ms;
+  --border-transition-base: border-color 150ms cubic-bezier(.645,.045,.355,1);
+  --color-transition-base: color 150ms cubic-bezier(.645,.045,.355,1);
 
   /* Colors
   -------------------------- */
-  --color-primary: #20a0ff;
+  --color-primary: #5052C3;
 
-  --color-success: #13ce66;
-  --color-warning: #f7ba2a;
-  --color-danger: #ff4949;
-  --color-info: #50bfff;
+  --color-success: #01D57B;
+  --color-warning: #FFDD56;
+  --color-danger: #FF385F;
+  --color-info: #3273DC;
 
   --color-secondary: color(var(--color-primary) s(99%) l(*0.9));
   --color-white: #fff;
   --color-dark-white: color(var(--color-white) blend(var(--color-primary) 2%));
   --color-black: #000;
 
-  --color-base-black: color(var(--color-primary) h(+6) s(33%) l(18%));
-  --color-light-black: color(var(--color-base-black) h(+5) s(27%) l(27%));
-  --color-extra-light-black: color(var(--color-base-black) h(+2) s(19%) l(35%));
+  --color-base-black: #494949;
+  --color-light-black: #7A7A7A;
+  --color-extra-light-black: #B5B5B5;
 
-  --color-base-silver: color(var(--color-base-black) h(+3) s(16%) l(58%));
-  --color-light-silver: color(var(--color-base-black) h(+3) s(23%) l(67%));
-  --color-extra-light-silver: color(var(--color-base-black) s(26%) l(80%));
+  /*--color-base-silver: color(var(--color-primary) h(+3) s(16%) l(58%));
+  --color-light-silver: color(var(--color-primary) h(+3) s(23%) l(67%));
+  --color-extra-light-silver: color(var(--color-primary) s(26%) l(80%));*/
 
-  --color-base-gray: color(var(--color-base-black) s(28%) l(86%));
-  --color-light-gray: color(var(--color-base-black) h(+10) s(33%) l(92%));
-  --color-extra-light-gray: color(var(--color-base-black) h(+6) s(33%) l(95%));
+  --color-base-silver: #8492A6;
+  --color-light-silver: #99A9BF;
+  --color-extra-light-silver: #C0CCDA;
+
+  --color-base-gray: #D3DCE6;
+  --color-light-gray: #E5E9F2;
+  --color-extra-light-gray: #EFF2F7;
 
   /* Link
   -------------------------- */
-  --link-color: var(--color-extra-light-black);
-  --link-hover-color: var(--color-primary);
+  --link-color: var(--color-primary);
+  --link-hover-color: var(--color-base-black);
 
   /* Border
   -------------------------- */
-  --border-width-base: 1px;
+  --border-width-base: 2px;
   --border-style-base: solid;
   --border-color-base: var(--color-extra-light-silver);
   --border-color-hover: var(--color-base-silver);
   --border-base: var(--border-width-base) var(--border-style-base) var(--border-color-base);
   --border-radius-base: 4px;
-  --border-radius-small: 2px;
+  --border-radius-small: 3px;
   --border-radius-circle: 100%;
 
   /* Box-shadow
@@ -62,13 +66,13 @@
 
   /* Font
   -------------------------- */
-  --font-size-base: 14px;
+  --font-size-base: 16px;
   --font-color-base: var(--color-base-black);
   --font-color-disabled-base: #bbb;
 
   /* Size
   -------------------------- */
-  --size-base: 14px;
+  --size-base: 16px;
 
   /* z-index
   -------------------------- */
@@ -88,10 +92,10 @@
 
   /* Checkbox
   -------------------------- */
-  --checkbox-font-size: 14px;
+  --checkbox-font-size: 16px;
   --checkbox-color: var(--color-base-black);
-  --checkbox-input-height: 18px;
-  --checkbox-input-width: 18px;
+  --checkbox-input-height: 20px;
+  --checkbox-input-width: 20px;
   --checkbox-input-border-radius: var(--border-radius-base);
   --checkbox-input-fill: var(--color-white);
   --checkbox-input-border: var(--border-base);
@@ -114,10 +118,10 @@
 
   /* Radio
   -------------------------- */
-  --radio-font-size: 14px;
+  --radio-font-size: 16px;
   --radio-color: var(--color-base-black);
-  --radio-input-height: 18px;
-  --radio-input-width: 18px;
+  --radio-input-height: 20px;
+  --radio-input-width: 20px;
   --radio-input-border-radius: var(--border-radius-circle);
   --radio-input-fill: var(--color-white);
   --radio-input-border: var(--border-base);
@@ -324,16 +328,16 @@
 
   /* Button
   -------------------------- */
-  --button-font-size: 14px;
+  --button-font-size: 16px;
   --button-border-radius: var(--border-radius-base);
   --button-padding-vertical: 10px;
   --button-padding-horizontal: 15px;
 
-  --button-large-font-size: 16px;
+  --button-large-font-size: 20px;
   --button-large-padding-vertical: 11px;
   --button-large-padding-horizontal: 19px;
 
-  --button-small-font-size: 12px;
+  --button-small-font-size: 14px;
   --button-small-padding-vertical: 7px;
   --button-small-padding-horizontal: 9px;
 
